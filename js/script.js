@@ -1,11 +1,11 @@
 // Denna fil skall innehålla JavaScript (JS)
-const nav = document.querySelector('.navlink')
+const nav = document.querySelector('.navLinks')
 const burger = document.querySelector('.burger')
 
 function toggleMeny() {
 
     nav.classList.toggle('navActive')
-    burger.classList.toggle('burger')
+    burger.classList.toggle('.burger')
 }
 
 burger.addEventListener ('click', toggleMeny)

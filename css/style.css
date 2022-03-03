@@ -12,7 +12,7 @@
 
 nav {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-start; 
     align-items: center; 
     height: 10vh; 
     background-color: grey;
@@ -21,7 +21,7 @@ nav {
 }
 
 .burger {
-    margin-right: 50px; 
+    margin-left: 50px; 
     cursor: pointer; 
 }
 
@@ -64,15 +64,15 @@ nav {
     transition: all 0.3s; 
 }
 
-.line1 {
-    transform: rotate(-45deg) translate( -5px, 6px); 
+.toggle .line1 {
+    transform: rotate (-45deg) translate( -5px, 6px); 
 }
 
-.line2 {
+.toggle .line2 {
     opacity: 0; 
 }
 
-.line3 {
-    transform: rotate(45deg) translate( -5px, -6px);
+.toggle .line3 {
+    transform: rotate (45deg) translate( -5px, -6px);
 }
 
