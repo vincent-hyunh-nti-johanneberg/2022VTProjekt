@@ -1,7 +1,43 @@
 /* Denna fil skall innehålla din CSS kod */
-#wrapper {
-    border: solid black 1px
+#wrapper { 
+    height: 100vh;
+    display: grid; 
+    border: solid black 1px;
+    grid-template-areas: 
+    'nv'
+    'b1'
+    'b2'
+    'b3'
+    'ft'
+    ;
+    
+
 }
+
+#bild {
+    grid-area: b1;
+    background-color: lightgreen;
+}
+
+#bild2 {
+    grid-area: b2;
+    background-color: lightcoral; 
+}
+
+#bild3 {
+    grid-area: b3; 
+    background-color: purple;
+}
+
+footer {
+    grid-area: ft;
+    background-color: grey;
+}
+
+
+
+
+
 
 * {
     margin: 0px; 
@@ -11,6 +47,7 @@
 
 
 nav {
+    grid-area: nv;
     display: flex;
     justify-content: flex-start; 
     align-items: center; 
