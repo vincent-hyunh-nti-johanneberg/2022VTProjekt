@@ -4,39 +4,35 @@
     display: grid; 
     border: solid black 1px;
     grid-template-areas: 
-    'nv'
-    'b1'
-    'b2'
-    'b3'
-    'ft'
+     'nav nav'
+     'hea hea'
+     's01 s01'
+     's02 s02'
+     'art art'
     ;
     
 
 }
 
-#bild {
-    grid-area: b1;
-    background-color: lightgreen;
+header {
+    grid-area: hea;
+    background-color: green
 }
 
-#bild2 {
-    grid-area: b2;
-    background-color: lightcoral; 
-}
-
-#bild3 {
-    grid-area: b3; 
+#section1 {
+    grid-area: s01; 
     background-color: purple;
 }
 
-footer {
-    grid-area: ft;
+#section2 {
+    grid-area: s02; 
     background-color: grey;
 }
 
-
-
-
+#article {
+    grid-area: art; 
+    background-color: blue; 
+}
 
 
 * {
@@ -47,7 +43,7 @@ footer {
 
 
 nav {
-    grid-area: nv;
+    grid-area: nav;
     display: flex;
     justify-content: flex-start; 
     align-items: center; 
