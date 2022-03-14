@@ -2,21 +2,54 @@
 #wrapper { 
     height: 100vh;
     display: grid; 
-    border: solid black 1px;
     grid-template-areas: 
-     'nav nav'
-     'hea hea'
+     'nav hea'
      's01 s01'
-     's02 s02'
      'art art'
+     's02 s02'
     ;
+    grid-template-columns: 20% 80%; 
+    grid-template-rows: 10vh 40vh 40vh 40vh;
+
+}
+
+@media screen and (min-width: 800px) {
     
+#wrapper {
+    grid-template-areas: 
+        'nav nav nav'
+        'hea hea hea'
+        's01 s01 s01'
+        'art art art';
+    grid-template-areas: repeat (3, 1fr);
+    grid-template-rows: 10vh 30vh 30vh 30vh; 
+}
+        
+    .burger {
+        visibility: hidden;
+    }
+
+    nav {
+        display: flex; 
+        justify-content: space-around;
+        align-items: center; 
+        background-color: red;
+    }
+
+    .navLinks {
+        flex-direction: row; 
+        justify-content: space-around;
+        position: relative;
+        top: 0px; 
+        width: 100vw; 
+        height: 100%;   
+    }
 
 }
 
 header {
     grid-area: hea;
-    background-color: green
+    background-color: grey; 
 }
 
 #section1 {
@@ -26,7 +59,7 @@ header {
 
 #section2 {
     grid-area: s02; 
-    background-color: grey;
+    background-color: teal;
 }
 
 #article {
@@ -54,7 +87,7 @@ nav {
 }
 
 .burger {
-    margin-left: 50px; 
+    margin-left: 35px; 
     cursor: pointer; 
 }
 
@@ -66,9 +99,9 @@ nav {
     left: 0px; 
     height: 90vh; 
     top: -90vh;
-    background-color: grey;
+    background-color: yellow;
     align-items: center; 
-    width: 20%; 
+    width: 100%; 
     transition: all 1s; 
 }
 
