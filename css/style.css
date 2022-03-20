@@ -3,13 +3,13 @@
     height: 100vh;
     display: grid; 
     grid-template-areas: 
-     'nav hea'
+     'nav nav'
      's01 s01'
      'art art'
-     's02 s02'
+    
     ;
     grid-template-columns: 20% 80%; 
-    grid-template-rows: 10vh 40vh 40vh 40vh;
+    grid-template-rows: 10vh 100vh 20vh;
 
 }
 
@@ -54,17 +54,21 @@ header {
 
 #section1 {
     grid-area: s01; 
-    background-color: purple;
+    background-color: none;
+    background-image: url(../img/christina-dibernardo-cdI-r1QlCvo-unsplash.jpg);
+    background-size: 100%;
+    background-size: contain;
+    background-size: cover;
+    filter: blur(4px);
+   
+    
 }
 
-#section2 {
-    grid-area: s02; 
-    background-color: teal;
-}
+
 
 #article {
     grid-area: art; 
-    background-color: blue; 
+    background-color:#1a1a1d;
 }
 
 
@@ -83,6 +87,7 @@ nav {
     height: 10vh; 
     background-color: grey;
     font-family: sans-serif;
+    z-index: 1;
     
 }
 
