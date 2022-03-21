@@ -55,7 +55,7 @@ header {
 #section1 {
     grid-area: s01; 
     background-color: none;
-    background-image: url(../img/garin-chadwick-ECSP5pDeCI4-unsplash.jpg);
+    background-image: url(../img/blurstairs.png);
     background-size: 100%;
     background-size: contain;
     background-size: cover;
@@ -77,14 +77,16 @@ header {
     background-color:#4e4e50;
     position: absolute; 
     top: 250px;
-    left: 75px;
+    left: 70px;
     border-radius: 10px;
 }
 
 #boxtext p {
     color: white; 
-    padding-top: 20px;
-    margin-left: 20px;
+    padding-top: 75px;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-size: 40px;
 }
 
 * {
