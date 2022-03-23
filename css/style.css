@@ -17,26 +17,23 @@
     
 #wrapper {
     grid-template-areas: 
-        'nav nav nav'
-        'hea hea hea'
+        'nav hea hea'
         's01 s01 s01'
         'art art art';
     grid-template-areas: repeat (3, 1fr);
     grid-template-rows: 10vh 30vh 30vh 30vh; 
 }
         
-    .burger {
-        visibility: hidden;
-    }
 
-    nav {
+
+nav {
         display: flex; 
         justify-content: space-around;
         align-items: center; 
         background-color: red;
     }
 
-    .navLinks {
+.navLinks {
         flex-direction: row; 
         justify-content: space-around;
         position: relative;
