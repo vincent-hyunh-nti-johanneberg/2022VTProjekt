@@ -49,8 +49,6 @@ header {
     
 }
 
-
-
 #article {
     grid-area: art; 
     background-color:#1a1a1d;
@@ -180,4 +178,49 @@ nav {
 .toggle .line3 {
     transform: rotate (45deg) translate( -5px, -6px);
 }
+
+#wrapperk {
+    height: 100vh; 
+    display: grid;
+    grid-template-areas:
+    'nav nav'
+    'sta sta'
+    'fot fot'
+   
+    ;
+    grid-template-rows: 10vh 90vh 20vh; 
+}
+
+.starticle {
+    margin: 50px;
+    display: flex;
+    flex-direction: columns; 
+    justify-content: center;
+    align-items: center;
+}
+
+.staircontainer {
+    grid-area: sta;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer {
+    grid-area: fot;
+    background-color: #1a1a1d;
+
+}
+
+.picture1 {
+    background-image: url(../img/alex-shu-WzRAL_jsb2k-unsplash.jpg)
+}
+
+
+
+
 
