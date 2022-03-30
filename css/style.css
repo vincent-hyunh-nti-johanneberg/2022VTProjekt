@@ -179,6 +179,7 @@ nav {
     transform: rotate (45deg) translate( -5px, -6px);
 }
 
+/* CSS för kopsida.html */
 #wrapperk {
     height: 100vh; 
     display: grid;
@@ -186,13 +187,12 @@ nav {
     'nav nav'
     'sta sta'
     'fot fot'
-   
     ;
     grid-template-rows: 10vh 90vh 20vh; 
 }
 
 .starticle {
-    margin: 50px;
+    margin: 20px;
     display: flex;
     flex-direction: columns; 
     justify-content: center;
@@ -202,13 +202,11 @@ nav {
 .staircontainer {
     grid-area: sta;
     display: flex; 
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
-
 
 footer {
     grid-area: fot;
@@ -222,8 +220,49 @@ footer {
     width: 200px; 
     background-size: 100%;
 }
+ 
+.picture2 {
+    background-image: url(../img/christina-dibernardo-cdI-r1QlCvo-unsplash.jpg);
+    height: 250px;
+    width: 200px; 
+    background-size: 100%;
+}
 
+.picture3 {
+    background-image: url(../img/muzammil-soorma-6M_Wiwi1LQQ-unsplash.jpg);
+    height: 250px;
+    width: 200px; 
+    background-size: 100%;
+}
 
+.picture4 {
+    background-image: url(../img/qinghong-shen-A71hpMTGZ4I-unsplash.jpg);
+    height: 250px;
+    width: 200px; 
+    background-size: 100%;
+}
 
+.picture5 {
+    background-image: url(../img/garin-chadwick-ECSP5pDeCI4-unsplash.jpg);
+    height: 250px;
+    width: 200px; 
+    background-size: 100%;
+}
 
+.picture6 {
+    background-image: url(../img/jason-briscoe-UV81E0oXXWQ-unsplash.jpg);
+    height: 250px;
+    width: 200px; 
+    background-size: 100%;
+}
+
+/* CSS för betala.html */
+
+#wrapperb1 {
+    height: 100vh; 
+    display: grid; 
+    grid-template-areas:
+    'nav nav'
+    ;
+}
 
