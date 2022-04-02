@@ -4,7 +4,7 @@
     display: grid; 
     grid-template-areas: 
      'nav nav'
-     's01 s01'
+     's01 s01 '
     
     ;
     grid-template-columns: 20% 80%; 
@@ -12,30 +12,8 @@
 
 }
 
-@media screen and (min-width: 800px) {
 
-nav {
-        display: flex; 
-        justify-content: space-around;
-        align-items: center; 
-        background-color: red;
-    }
 
-.navLinks {
-        flex-direction: row; 
-        justify-content: space-around;
-        position: relative;
-        top: 0px; 
-        width: 100vw; 
-        height: 100%;   
-    }
-
-}
-
-header {
-    grid-area: hea;
-    background-color: #1a1a1d; 
-}
 
 #section1 {
     grid-area: s01; 
@@ -44,37 +22,28 @@ header {
     background-size: 100%;
     background-size: contain;
     background-size: cover;
-   
-   
     
 }
 
-#article {
-    grid-area: art; 
-    background-color:#1a1a1d;
-}
 
 #boxtext {
-    
-    width: 350px;
-    height: 200px;
+    width: 275px;
+    height: 150px;
     background-color:#4e4e50;
     position: absolute; 
-    top: 250px;
-    left: 75px;
+    top: 200px;
+    left: 50px;
     border-radius: 10px;
 }
 
 
 .slideshow {
     width: 300px;
-    height: 400px;
-    background-color: #1a1a1d; 
+    height: 400px; 
     position: absolute; 
-    left: 100px;
-    top: 500px;
+    left: 40px;
+    top: 450px;
     border-radius: 10px;
-
 }
 
 .prev, .next {
@@ -98,8 +67,8 @@ header {
 
 #boxtext p {
     color: white; 
-    padding-top: 75px;
-    margin-left: 100px;
+    padding-top: 55px;
+    margin-left: 65px;
     font-family: sans-serif;
     font-size: 40px;
 }
@@ -188,7 +157,7 @@ nav {
     'sta sta'
     'fot fot'
     ;
-    grid-template-rows: 10vh 120vh 20vh; 
+    grid-template-rows: 10vh 275vh 20vh; 
 }
 
 .starticle {
@@ -278,6 +247,36 @@ footer {
     display: grid; 
     grid-template-areas:
     'nav nav'
+    'fet fet'
     ;
+    grid-template-rows: 10vh 100vh 20vh;
 }
 
+.itemcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.itemphoto1 {
+    background-image: url(../img/alex-shu-WzRAL_jsb2k-unsplash.jpg);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
+
+.button {
+    background-color: #1a1a1d;
+    width:200px;
+    height:50px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: rgb(236, 236, 195);
+}
+
+.feetsies {
+    grid-area: fet;
+    background-color: #1a1a1d;
+    height: 15vh;
+}
