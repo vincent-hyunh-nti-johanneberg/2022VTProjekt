@@ -1,9 +1,20 @@
 /* Denna fil skall innehålla din CSS kod */
+a {
+    text-decoration: none;
+    color: white; 
+    
+}
+
+li {
+    list-style-type: none;
+}
+
 #wrapper { 
     display: grid; 
     grid-template-areas: 
     'nav nav'
     'sco sco'
+    'fet fet'
     
     ;
     grid-template-columns: 20% 80%; 
@@ -11,6 +22,12 @@
 
 }
 
+
+#logo{
+    background-image: url(../img/Trap.svg);
+    background-size: 100%; 
+    background-position:center; 
+}
 .slideshow-container {
     grid-area: sco;
     width: 100%;
@@ -27,13 +44,13 @@
 
 .textbocks  {
     padding-top: 60px;
-    text-align:center; 
     margin-top: 100px;
     width: 50vw;
-    height: 20vh; 
+    height: 18vh; 
     background-color: #1a1a1d;
     border-radius: 10px;
-    color: wheat; 
+    background-image: url(../img/Trapstar.svg);
+    background-size: 100%;
 } 
 
 @keyframes slideshow {
@@ -56,38 +73,16 @@
  }
 
 }
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
+
 
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
 
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 720px;
-    width: 100%;
-    text-align: center;
-}
 
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
+
+
 .active {
     background-color: #717171;
 }
@@ -100,7 +95,8 @@
 * {
     margin: 0px; 
     padding: 0px; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: sans-serif; 
 }
 
 
@@ -194,9 +190,9 @@ nav {
     grid-template-areas:
     'nav nav'
     'sta sta'
-    'fot fot'
+    'fet fet'
     ;
-    grid-template-rows: 10vh 275vh 20vh; 
+    grid-template-rows: 10vh auto 20vh; 
 }
 
 .starticle {
@@ -216,9 +212,6 @@ nav {
     align-items: center;
     align-content: flex-start;
 }
-
-
-
 
 .starticle li{
     letter-spacing: 0px;
@@ -336,7 +329,11 @@ footer {
 .feetsies {
     grid-area: fet;
     background-color: #1a1a1d;
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
 }
+
 
