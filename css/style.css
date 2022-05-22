@@ -1,75 +1,100 @@
 /* Denna fil skall innehålla din CSS kod */
 #wrapper { 
-    height: 100vh;
     display: grid; 
     grid-template-areas: 
-     'nav nav'
-     's01 s01 '
+    'nav nav'
+    'sco sco'
     
     ;
     grid-template-columns: 20% 80%; 
-    grid-template-rows: 10vh 120vh;
+
 
 }
 
-
-
-
-#section1 {
-    grid-area: s01; 
-    background-color: none;
-    background-image: url(../img/blurstairs.png);
-    background-size: 100%;
-    background-size: contain;
-    background-size: cover;
+.slideshow-container {
+    grid-area: sco;
+    width: 100%;
+    height: 100vh;
+    animation-name: slideshow;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    background-image: url(../img/Kinggong.jpg);
+    background-size: cover; 
+    display: flex; 
+    justify-content: center;
+    
 }
 
-
-#boxtext {
-    width: 275px;
-    height: 150px;
-    background-color:#4e4e50;
-    position: absolute; 
-    top: 200px;
-    left: 50px;
+.textbocks  {
+    padding-top: 60px;
+    text-align:center; 
+    margin-top: 100px;
+    width: 50vw;
+    height: 20vh; 
+    background-color: #1a1a1d;
     border-radius: 10px;
+    color: wheat; 
+} 
+
+@keyframes slideshow {
+
+
+    0% { 
+    background-image:url(../img/Kinggong.jpg)
+    }
+
+    25% { 
+    background-image:url(../img/christina-dibernardo-cdI-r1QlCvo-unsplash.jpg)
+    }
+
+    50% { 
+    background-image:url(../img/frgarin.jpg)
+    }
+    75% { 
+    background-image:url(../img/muzammil-soorma-6M_Wiwi1LQQ-unsplash.jpg);
+    background-position: center; 
+ }
+
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
 
-.slideshow {
-    width: 300px;
-    height: 400px; 
-    position: absolute; 
-    left: 40px;
-    top: 450px;
-    border-radius: 10px;
-}
-
-.prev, .next {
-    cursor: pointer;
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
     position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    top: 720px;
+    width: 100%;
+    text-align: center;
 }
 
-.next {
-    right: 0;
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.active {
+    background-color: #717171;
 }
 
-#boxtext p {
-    color: white; 
-    padding-top: 55px;
-    margin-left: 65px;
-    font-family: sans-serif;
-    font-size: 40px;
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 * {
@@ -191,6 +216,8 @@ nav {
     align-items: center;
     align-content: flex-start;
 }
+
+
 
 
 .starticle li{
